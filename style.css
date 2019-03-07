@@ -1,0 +1,82 @@
+.body-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.link {
+    color: black;
+    font-size: 14px;
+    float:left;
+}
+
+.link:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+#header-content {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid gray;
+}
+
+.content {
+    background-image: url("sandwich.jpeg");
+    background-repeat: repeat-x;
+    background-position-x: -20px;
+    background-position-y: 56px;
+    opacity: 0.50;
+    z-index: -1;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.text-content {
+    font-family: 'Permanent Marker';
+    font-size: 64px;
+    z-index: 5;
+    position: relative;
+    top: -450px;
+    left: 0px;
+    color: black;
+    text-align: center;
+}
+
+.b-content {
+    text-align: center;
+    font-family: 'Permanent Marker';
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.menu-section.col{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section > .row{
+    margin-top: 20px;
+}
+
+/* .h3 {
+    margin-top: 20px;
+} */
+
+@media only screen and (max-width: 740px) {
+    .navbar.nav-item {
+        float: none;
+        width: 100%;
+    }
+
+    /* .link {
+        float: none;
+        width: 100%;
+    } */
+}
