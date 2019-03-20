@@ -1,3 +1,7 @@
+.navbar.navbar-brand {
+    text-align: left;
+}
+
 .body-content {
     position: fixed;
     top: 0;
@@ -50,33 +54,89 @@
 .b-content {
     text-align: center;
     font-family: 'Permanent Marker';
+    font-size: 16px;
+    position: relative;
+    top: -100px;
 }
 
 .section {
     margin-bottom: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    /* columns: 1fr 1fr 1fr; */
+    /* float: left; */
 }
 
-.menu-section.col{
-    padding-left: 20px;
-    padding-right: 20px;
+.menu-section{
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+
+table, th, tr *{
+    /* margin: 5px; */
+    border: 1px solid black;
+}
+
+tr {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    width: 100%;
 }
 
 .section > .row{
     margin-top: 20px;
 }
 
-/* .h3 {
-    margin-top: 20px;
-} */
+.merch-section{
+    padding-left: 10px;
+    padding-right: 10px;
+    /* float: left; */
+}
 
-@media only screen and (max-width: 740px) {
-    .navbar.nav-item {
+.merch-section.grid-item.col > div *{
+    margin-bottom: 10px;
+} 
+
+div > * {
+    text-align: center;
+}
+
+@media only screen and (max-width: 816px) {
+    .navbar {
+        float: none;
+        width: 50%;
+    }
+
+    /* .merch-img {
+        float: none;
+        width: 100%;
+    } */
+    
+    /* .merch-section{
+        float: none;
+    } */
+}
+
+@media only screen and (max-width: 550px) {
+
+    .navbar {
         float: none;
         width: 100%;
     }
 
-    /* .link {
-        float: none;
+     .merch-img {
+        /* float: none; */
         width: 100%;
-    } */
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .merch-section{
+        float: none;
+    }
 }
